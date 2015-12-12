@@ -3,12 +3,15 @@ $(document).ready(function(){
     var linkId = $(this).attr('id');
     switch(linkId) {
       case 'homelink':
-        $('.page').removeClass('page-active');
-        $('#page-home').addClass('page-active');
+        //$('.page').removeClass('page-active');
+        //$('#page-home').addClass('page-active');
+        $("html, body").animate({ scrollTop: 0 }, "slow");
         break;
       case 'projectslink':
-        $('.page').removeClass('page-active');
-        $('#page-projects').addClass('page-active');
+        var pos = $("#page-projects").position();
+        $("html, body").animate({ scrollTop: pos.top }, "slow");
+        //$('.page').removeClass('page-active');
+        //$('#page-projects').addClass('page-active');
         break;
     }    
   })
