@@ -56,10 +56,6 @@ body, html {
   display:block;
 }
 
-.page-active {
-  /**display:block;**/
-}
-
 /** Positioning and Layout **/
 .center-horizontal {
   text-align:center;
@@ -74,11 +70,14 @@ body, html {
 }
 
 .top-vertical {
-  position: absolute;
+  margin-top:0px+10px+10px+20px;
+  display:inline-block;
 }
 
-.fixed-vertical {
-  
+
+.fixed-top-vertical {
+  position: fixed;
+  top: 0px;
 }
 
 /** Fonts and Accents **/
@@ -86,14 +85,20 @@ body, html {
   font-size: 80px;
 }
 
+
+
 /** Navigation **/
 #navbar {
+  height: 20px;
   width: 100%;
-  font-size: 20px;
-  position: fixed;
-  top: 0px;
+  font-size: 18px;
+  line-height: 20px;
+  padding: 10px;
+  margin: 0px;
   z-index: 2;
   ul {
+    margin: 0px;
+    padding: 0px;
     list-style:none;
     li {
       display:none;
@@ -117,5 +122,17 @@ body, html {
     }
   }
 }
+
+
+/** Grid **/
+#grid {
+  display: block;
+  margin-top: 30px; 
+  .item {
+    
+  }
+}
+
+
 
 

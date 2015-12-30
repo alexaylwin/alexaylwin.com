@@ -45,23 +45,18 @@ body, html {
   display: block;
 }
 
-/* line 59, ../sass/screen.scss */
-.page-active {
-  /**display:block;**/
-}
-
 /** Positioning and Layout **/
-/* line 64, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
 .center-horizontal {
   text-align: center;
 }
 
-/* line 68, ../sass/screen.scss */
+/* line 64, ../sass/screen.scss */
 .center-horizontal > * {
   display: inline-block;
 }
 
-/* line 72, ../sass/screen.scss */
+/* line 68, ../sass/screen.scss */
 .center-vertical > * {
   position: relative;
   top: 50%;
@@ -70,50 +65,68 @@ body, html {
   transform: translateY(-50%);
 }
 
-/* line 76, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 .top-vertical {
-  position: absolute;
+  margin-top: 40px;
+  display: inline-block;
+}
+
+/* line 78, ../sass/screen.scss */
+.fixed-top-vertical {
+  position: fixed;
+  top: 0px;
 }
 
 /** Fonts and Accents **/
-/* line 85, ../sass/screen.scss */
+/* line 84, ../sass/screen.scss */
 .title {
   font-size: 80px;
 }
 
 /** Navigation **/
-/* line 90, ../sass/screen.scss */
+/* line 91, ../sass/screen.scss */
 #navbar {
+  height: 20px;
   width: 100%;
-  font-size: 20px;
-  position: fixed;
-  top: 0px;
+  font-size: 18px;
+  line-height: 20px;
+  padding: 10px;
+  margin: 0px;
   z-index: 2;
 }
-/* line 96, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 #navbar ul {
+  margin: 0px;
+  padding: 0px;
   list-style: none;
 }
-/* line 98, ../sass/screen.scss */
+/* line 103, ../sass/screen.scss */
 #navbar ul li {
   display: none;
   padding-right: 8px;
 }
-/* line 101, ../sass/screen.scss */
+/* line 106, ../sass/screen.scss */
 #navbar ul li:hover {
   cursor: pointer;
   color: #BD8F13;
 }
-/* line 106, ../sass/screen.scss */
+/* line 111, ../sass/screen.scss */
 #navbar ul li.selected {
   display: block;
   color: #01A181;
 }
-/* line 109, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 #navbar ul li.selected:hover {
   color: #BD8F13;
 }
-/* line 114, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 #navbar ul:hover li {
   display: inline;
+}
+
+/** Grid **/
+/* line 128, ../sass/screen.scss */
+#grid {
+  display: block;
+  margin-top: 30px;
 }
