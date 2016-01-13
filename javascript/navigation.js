@@ -1,7 +1,11 @@
 $(document).ready(function(){
   $('.navlink').click(function(e){
     var linkId = $(this).attr('id');
-    switch(linkId) {
+	
+	$('.navlink').css('display', 'inline');
+	
+	
+	switch(linkId) {
       case 'homelink':
         //$('.page').removeClass('page-active');
         //$('#page-home').addClass('page-active');
@@ -13,6 +17,6 @@ $(document).ready(function(){
         //$('.page').removeClass('page-active');
         //$('#page-projects').addClass('page-active');
         break;
-    }    
+    }
   })
 });

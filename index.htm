@@ -1,41 +1,63 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Alex Aylwin</title>
-    <link rel="stylesheet" href="stylesheets/screen.css">
-  </head>
-  <body>
-    <div class="maincontainer">
-      <div id="navbar" class="top-vertical fixed-top-vertical background-black foreground-light">
-        <ul>
-          <li id="homelink" class="selected navlink">Home</li>
-          <li id="projectslink" class="navlink">Projects</li>
-        </ul>
-      </div>
-      <div id="page-home" class="page background-dark center-horizontal center-vertical page-active"> 
-        <span class="title">
-        Alex Aylwin
-        </span>
-      </div>
-      <div id="page-projects" class="page background-dark center-horizontal"> 
-        <span class="title top-vertical">Projects</span>
-        <br />
-        <div class="grid">
-          <div class="item">
-            Item 1  
-          </div>
-          <div class="item">
-            Item 3  
-          </div>
-          <div class="item">
-            Item 2  
-          </div>                    
-        </div>
-        
-      </div>      
-    </div>
-    <script src="javascript/jquery-2.1.4.min.js"></script>
-    <script src="javascript/navigation.js"></script>
-  </body>
-</html>
 
+<head>
+	<title>Alex Aylwin</title>
+	<link rel="stylesheet" href="stylesheets/screen.css">
+</head>
+
+<body>
+	<div class="maincontainer">
+		<div id="navbar" class="top-vertical fixed-top-vertical background-black foreground-light">
+			<ul>
+				<li id="homelink" class="selected navlink">Home</li>
+				<li id="projectslink" class="navlink">Projects</li>
+			</ul>
+		</div>
+		<div id="page-home" class="page background-dark page-active">
+			<div class="center-horizontal center-vertical title-font">
+				Alex Aylwin
+			</div>
+			<div class="center-horizontal center-vertical">
+				<p>Some flavour text</p>
+				<p>Second paragraph of flavour text</p>
+			</div>
+		</div>
+		<div id="page-projects" class="page background-dark">
+			<div class="top-vertical center-horizontal page-title-font">Projects</div>
+			<ul id="projectlist" class="system-font">
+				<li>
+					<span class="title">Item 1</span>
+					<br />
+					<span>My project description</span>
+					<ul>
+						<li> <a href="http://bacms.ca">Project Page - http://www.bacms.ca</a></li>
+						<li> <a href="http://github.com/alexaylwin/bacms">Github</a></li>
+					</ul>
+				</li>
+				<li>
+					<span class="title">Item 2</span>
+					<br />
+					<span>My project description</span>
+					<ul>
+						<li> <a href="http://bacms.ca">Project Page - http://www.bacms.ca</a></li>
+						<li> <a href="http://github.com/alexaylwin/bacms">Github</a></li>
+					</ul>					
+				</li>
+				<li>
+					<span class="title">BarelyACMS</span>
+					<br />
+					<span>My project description</span>
+					<ul>
+						<li> <a href="http://bacms.ca">Project Page - http://www.bacms.ca</a></li>
+						<li> <a href="http://github.com/alexaylwin/bacms">Github</a></li>
+					</ul>					
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script src="javascript/jquery-2.1.4.min.js"></script>
+	<script src="javascript/navigation.js"></script>
+</body>
+
+</html>

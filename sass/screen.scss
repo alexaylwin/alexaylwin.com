@@ -6,6 +6,7 @@
 $main-foreground: #9600B0;
 $dark-foreground: #560B63;
 $light-foreground: #cccccc;
+$link-foreground: #0E9BC7;
 $accent1-foreground: #BD8F13;
 $accent2-foreground: #01A181;
 $dark-background: #140D24;
@@ -20,6 +21,9 @@ $black-background: #000000;
   transform: translateY(-50%);
 }
 
+/** Imports **/
+@import url(https://fonts.googleapis.com/css?family=VT323);
+
 /** Default body styles **/
 body, html {
   margin: 0;
@@ -28,6 +32,16 @@ body, html {
   height:100%;
   font-family: sans-serif;
   }
+  
+ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+a {
+	text-decoration:none;
+	color: $light-foreground;
+}
 
 /** Coloring styles **/
 .background-dark {
@@ -50,28 +64,27 @@ body, html {
 
 /** Page Layout **/
 .page { 
-  width: 100%;
   height: 100%;
   color: $light-foreground;
   display:block;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 /** Positioning and Layout **/
 .center-horizontal {
+  display:block;
   text-align:center;
+  width: 100%;
 }
 
-.center-horizontal > * {
-  display:inline-block;
-}
-
-.center-vertical > * {
+.center-vertical {
   @include vertical-align();
 }
 
 .top-vertical {
-  margin-top:0px+10px+10px+20px;
-  display:inline-block;
+  padding-top:0px+10px+10px+20px;
+  display:block;
 }
 
 
@@ -81,12 +94,19 @@ body, html {
 }
 
 /** Fonts and Accents **/
-.title {
+.title-font {
   font-size: 80px;
 }
 
+.page-title-font {
+  font-size: 60px;
+}
 
+.system-font {
+    font-family: 'VT323';
+}
 
+/**-----Control styles-----**/
 /** Navigation **/
 #navbar {
   height: 20px;
@@ -119,20 +139,42 @@ body, html {
       li {
         display:inline;
       }
+	&:target {
+		li {
+			display:inline;
+		}
+	}
     }
   }
 }
 
-
-/** Grid **/
-#grid {
-  display: block;
-  margin-top: 30px; 
-  .item {
-    
-  }
+/**Project List **/
+#projectlist {
+	
+	li {
+		color: $light-foreground;
+		font-size: 20px;
+		margin-bottom: 15px;
+		
+		.title{ 
+			display:inline-block;
+			padding-bottom: 5px;
+			font-size: 40px;
+			color: $accent2-foreground; 			
+		}
+		a {
+			color:$link-foreground;
+		}
+		a:hover {
+			color: $accent1-foreground; 
+			cursor:pointer;
+		} 
+		
+		ul {
+			li {
+				margin-bottom: 0;
+			}
+		}
+	}
 }
-
-
-
 
