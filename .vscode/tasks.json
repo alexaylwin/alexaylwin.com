@@ -6,28 +6,30 @@
 // ${fileExtname}: the current opened file's extension
 // ${cwd}: the current working directory of the spawned process
 
-// Sass configuration
-// {
-//     "version": "0.1.0",
-//     "command": "gulp",
-//     "isShellCommand": true,
-//     "tasks": [
-//         {
-//             "taskName": "default",
-//             "isBuildCommand": true,
-//             "showOutput": "always",
-//             "isWatching": true
-//         }
-//     ]
-// }
-
+//Sass configuration
 {
     "version": "0.1.0",
-    "command": "compass",
+    "command": "gulp",
     "isShellCommand": true,
-	"showOutput": "silent",
-    "args": ["watch"]
+    "tasks": [
+        {
+			"taskName": "compass",
+			"args": ["compass"],
+			"isBuildCommand": true
+        },{
+			"taskName": "watch",
+			"args": ["watch"]
+        }
+    ]
 }
+
+// {
+//     "version": "0.1.0",
+//     "command": "compass",
+//     "isShellCommand": true,
+// 	"showOutput": "silent",
+//     "args": ["watch"]
+// }
 
 // A task runner that calls the Typescript compiler (tsc) and
 // Compiles a HelloWorld.ts program

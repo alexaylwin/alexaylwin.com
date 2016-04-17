@@ -22,7 +22,7 @@ $black-background: #000000;
 }
 
 /** Imports **/
-@import url(https://fonts.googleapis.com/css?family=VT323);
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
 
 /** Default body styles **/
 body, html {
@@ -36,11 +36,16 @@ body, html {
 ul {
     text-decoration: none;
     list-style: none;
+	padding-left:40px;
 }
 
 a {
 	text-decoration:none;
 	color: $light-foreground;
+}
+
+p {
+	padding-left: 40px;
 }
 
 /** Coloring styles **/
@@ -103,7 +108,7 @@ a {
 }
 
 .system-font {
-    font-family: 'VT323';
+    font-family: 'Press Start 2P';
 }
 
 /**-----Control styles-----**/
@@ -121,7 +126,7 @@ a {
     padding: 0px;
     list-style:none;
     li {
-      display:none;
+      display:inline;
       padding-right: 8px;
       &:hover {
         cursor:pointer;
@@ -129,21 +134,11 @@ a {
       }
     }
     li.selected {
-      display:block;
+      display:inline;
       color: $accent2-foreground;
       &:hover {
         color: $accent1-foreground;
       }      
-    }
-    &:hover {
-      li {
-        display:inline;
-      }
-	&:target {
-		li {
-			display:inline;
-		}
-	}
     }
   }
 }
@@ -177,4 +172,21 @@ a {
 		}
 	}
 }
+
+/** Skill List **/
+#skills {
+	width: 90%;
+	margin-right: 40px;
+	li {
+		background-color: $accent2-foreground;
+		display:inline-block;
+		width: 49%;
+		max-width: 200px;
+		max-height: 200px;
+		height: 150px;
+		border: 1px solid red;
+		margin-bottom: 5px;
+	}
+}
+
 

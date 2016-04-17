@@ -1,0 +1,5 @@
+namespace Framework {
+	class viewParser {
+		
+	}
+}
