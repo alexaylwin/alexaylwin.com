@@ -1,0 +1,42 @@
+/* Mixin */
+/** Imports **/
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+.clearfix:after {
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+/**-----Control styles-----**/
+/** Navigation **/
+#navbar {
+  height: 20px;
+  width: 100%;
+  font-size: 18px;
+  line-height: 20px;
+  padding: 10px;
+  margin: 0px;
+  z-index: 2;
+}
+#navbar ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+#navbar ul li {
+  display: inline;
+  padding-right: 8px;
+}
+#navbar ul li:hover {
+  cursor: pointer;
+  color: #BD8F13;
+}
+#navbar ul li.selected {
+  display: inline;
+  color: #01A181;
+}
+#navbar ul li.selected:hover {
+  color: #BD8F13;
+}

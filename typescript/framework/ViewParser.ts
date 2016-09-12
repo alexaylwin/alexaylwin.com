@@ -1,4 +1,4 @@
-namespace Framework {
+namespace MyFramework {
 	class viewParser {
 		
 	}

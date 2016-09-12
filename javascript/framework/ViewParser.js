@@ -1,8 +1,8 @@
-var Framework;
-(function (Framework) {
+var MyFramework;
+(function (MyFramework) {
     var viewParser = (function () {
         function viewParser() {
         }
         return viewParser;
     }());
-})(Framework || (Framework = {}));
+})(MyFramework || (MyFramework = {}));

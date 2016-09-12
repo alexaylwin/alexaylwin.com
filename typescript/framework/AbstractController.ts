@@ -1,5 +1,8 @@
-namespace Framework {
+namespace MyFramework {
 	export abstract class AbstractController {
-		abstract forwardToView(viewName : string): void;
+		forwardToView(viewName : string): void {
+			let fc = FrontController.getInstance();
+			fc.renderView(viewName);
+		}
 	}
 }

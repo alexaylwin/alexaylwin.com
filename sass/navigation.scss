@@ -1,0 +1,32 @@
+@import 'mixins';
+/**-----Control styles-----**/
+/** Navigation **/
+#navbar {
+  height: 20px;
+  width: 100%;
+  font-size: 18px;
+  line-height: 20px;
+  padding: 10px;
+  margin: 0px;
+  z-index: 2;
+  ul {
+    margin: 0px;
+    padding: 0px;
+    list-style:none;
+    li {
+      display:inline;
+      padding-right: 8px;
+      &:hover {
+        cursor:pointer;
+        color: $accent1-foreground;
+      }
+    }
+    li.selected {
+      display:inline;
+      color: $accent2-foreground;
+      &:hover {
+        color: $accent1-foreground;
+      }      
+    }
+  }
+}

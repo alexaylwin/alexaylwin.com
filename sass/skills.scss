@@ -1,0 +1,40 @@
+@import 'mixins';
+.skill-container {
+  display:flex;
+  margin-bottom: 15px;
+  line-height: 26px;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-weight: 600;
+
+  .skill-box-full {
+    background-color: #226622;
+    border: 1px solid white;
+    border-right: none;
+    padding-left: 10px;
+  }
+
+  .skill-box-40 {
+    @extend .skill-box-full;
+    width: 40%;
+  }
+
+  .skill-box-60 {
+    @extend .skill-box-full;
+    width: 60%; 
+  }    
+  .skill-box-80 {
+    @extend .skill-box-full;
+    width: 80%;
+  }  
+  .skill-box-90 {
+    @extend .skill-box-full;
+    width: 90%;
+  }
+
+  .skill-box-empty {
+    flex-grow: 1;    
+    border: 1px solid white;
+    border-left: none;
+  }
+}

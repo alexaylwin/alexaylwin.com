@@ -1,0 +1,28 @@
+$main-foreground: #9600B0;
+$dark-foreground: #560B63;
+$light-foreground: #cccccc;
+$link-foreground: #0E9BC7;
+$accent1-foreground: #BD8F13;
+$accent2-foreground: #01A181;
+$dark-background: #140D24;
+$black-background: #000000;
+
+/* Mixin */
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/** Imports **/
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+
+.clearfix:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}

@@ -1,9 +1,9 @@
-var Framework;
-(function (Framework) {
+var MyFramework;
+(function (MyFramework) {
     var AbstractModel = (function () {
         function AbstractModel() {
         }
         return AbstractModel;
     }());
-    Framework.AbstractModel = AbstractModel;
-})(Framework || (Framework = {}));
+    MyFramework.AbstractModel = AbstractModel;
+})(MyFramework || (MyFramework = {}));

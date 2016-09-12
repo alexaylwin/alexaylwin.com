@@ -1,0 +1,42 @@
+/* Mixin */
+/** Imports **/
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+.clearfix:after {
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.skill-container {
+  display: flex;
+  margin-bottom: 15px;
+  line-height: 26px;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-weight: 600;
+}
+.skill-container .skill-box-full, .skill-container .skill-box-40, .skill-container .skill-box-60, .skill-container .skill-box-80, .skill-container .skill-box-90 {
+  background-color: #226622;
+  border: 1px solid white;
+  border-right: none;
+  padding-left: 10px;
+}
+.skill-container .skill-box-40 {
+  width: 40%;
+}
+.skill-container .skill-box-60 {
+  width: 60%;
+}
+.skill-container .skill-box-80 {
+  width: 80%;
+}
+.skill-container .skill-box-90 {
+  width: 90%;
+}
+.skill-container .skill-box-empty {
+  flex-grow: 1;
+  border: 1px solid white;
+  border-left: none;
+}

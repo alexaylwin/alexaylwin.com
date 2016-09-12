@@ -1,0 +1,30 @@
+@import 'mixins';
+/**Project List **/
+#projectlist {
+	
+	li {
+		color: $light-foreground;
+		font-size: 20px;
+		margin-bottom: 15px;
+		
+		.title{ 
+			display:inline-block;
+			padding-bottom: 5px;
+			font-size: 24px;
+			color: $accent2-foreground; 			
+		}
+		a {
+			color:$link-foreground;
+		}
+		a:hover {
+			color: $accent1-foreground; 
+			cursor:pointer;
+		} 
+		
+		ul {
+			li {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

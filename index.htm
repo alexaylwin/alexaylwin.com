@@ -3,7 +3,11 @@
 
 <head>
 	<title>Alex Aylwin</title>
-	<link rel="stylesheet" href="stylesheets/screen.css">
+	<link rel="stylesheet" href="stylesheets/screen.css">	
+	<link rel="stylesheet" href="stylesheets/navigation.css">
+	<link rel="stylesheet" href="stylesheets/projects.css">
+	<link rel="stylesheet" href="stylesheets/skills.css">
+	<link rel="stylesheet" href="stylesheets/timeline.css">
 </head>
 
 <body>
@@ -15,37 +19,75 @@
 				<li id="projectslink" class="navlink">Projects</li>
 			</ul>
 		</div>
-		<div id="page-home" class="page background-dark page-active">
-			<div class="center-horizontal center-vertical title-font">
+		<div id="page-home" class="page background-dark page-active" style="height:100%;">
+			<h1 class="center-horizontal center-vertical title-font">
 				Alex Aylwin
-			</div>
+			</h1>
 			<div class="center-horizontal center-vertical">
-				<p>Some flavour text</p>
+				<p><a href="https://www.linkedin.com/in/alexaylwin">LinkedIn</a></p>
 				<p>Second paragraph of flavour text</p>
 			</div>
 		</div>
 		<div id="page-aboutme" class="page background-dark page">
-			<div class="center-horizontal top-vertical page-title-font">
+			<h2 class="center-horizontal top-vertical page-title-font">
 				About Me
+			</h2>
+			<p>
+				I'm a software developer with experience building enterprise-grade Java web applications.
+				My professional experience is dominated by my work on RBC's Online Banking platform. 
+			</p>
+			<div id="timeline">
+				<div class="item-container left">
+					<h3 class="item-title">McMaster University (2007-2012)</h3>
+					<img class="item-image" src="images/fireball-web.png"/>
+					<p class="item-description">
+						Attended McMaster University, recieving a degree in Software Engineering and Society.
+						Attended McMaster University, recieving a degree in Software Engineering and Society.
+						Attended McMaster University, recieving a degree in Software Engineering and Society.
+						Attended McMaster University, recieving a degree in Software Engineering and Society.
+					</p>
+				</div>
+				<br />
+				<div class="item-container right">
+					<h3 class="item-title">McMaster University (2007-2012)</h3>
+					<img class="item-image" src="images/fireball-web.png"/>
+					<p class="item-description">
+						Attended McMaster University, recieving a degree in Software Engineering and Society.
+						Attended McMaster University, recieving a degree in Software Engineering and Society.
+						Attended McMaster University, recieving a degree in Software Engineering and Society.
+						Attended McMaster University, recieving a degree in Software Engineering and Society.
+					</p>
+				</div>				
 			</div>
+			<br />
+			<br />
 			<p>
 				Hi, my name is Alex. I'm blah blah blah!
+				add a timeline
+				- McMaster class of 2012 
+				- Joined RBC Royal Bank after graduation
+				- 	Worked on Portal
+				- 	Piloted JSF in production
+				- Moved to Senior Analyst
+				- 	Worked on server migration of Portal
+				- 	Lead project to build new look and feel
+				- 	Continued to push front end development standards
+				- Moved to Technical Lead/Senior Developer
+				- 	Piloted Spring MVC with Thymeleaf in production
 			</p>
-			<p>
-				Hi, my name is Alex. I'm blah blah blah!
-			</p>
-			<p>
-				Hi, my name is Alex. I'm blah blah blah!
-			</p>
-			<ul id="skills">
-				<li><span class="label center-horizontal center-vertical">Java</span><div class="skill-level"></div></li>
-				<li><span class="label center-horizontal center-vertical">HTML</span><div class="skill-level"></div></li>
-				<li><span class="label center-horizontal center-vertical">CSS</span><div class="skill-level"></div></li>
-			</ul>						
+			<div class="skill-container">
+				<div class="skill-box-40">Java</div><div class="skill-box-empty"></div>
+			</div>
+			<div class="skill-container">
+				<div class="skill-box-60">Java</div><div class="skill-box-empty"></div>
+			</div>
+			<div class="skill-container">
+				<div class="skill-box-80">Java</div><div class="skill-box-empty"></div>
+			</div>						
 		</div>		
 		<div id="page-projects" class="page background-dark">
 			<div class="top-vertical center-horizontal page-title-font">Projects</div>
-			<ul id="projectlist" class="system-font">
+			<ul id="projectlist">
 				<li>
 					<span class="title">Item 1</span>
 					<br />
