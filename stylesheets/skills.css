@@ -17,17 +17,31 @@
   margin-right: 30px;
   font-weight: 600;
 }
-.skill-container .skill-box-full, .skill-container .skill-box-40, .skill-container .skill-box-60, .skill-container .skill-box-80, .skill-container .skill-box-90 {
-  background-color: #226622;
+.skill-container .skill-box-full, .skill-container .skill-box-20, .skill-container .skill-box-40, .skill-container .skill-box-50, .skill-container .skill-box-60, .skill-container .skill-box-70, .skill-container .skill-box-80, .skill-container .skill-box-90 {
+  background-color: #194b19;
   border: 1px solid white;
   border-right: none;
   padding-left: 10px;
+  color: #ffffff;
+}
+.skill-container .skill-box-20 {
+  background-color: #a22c23;
+  width: 20%;
 }
 .skill-container .skill-box-40 {
+  background-color: #b76c1d;
   width: 40%;
 }
+.skill-container .skill-box-50 {
+  background-color: #b76c1d;
+  width: 50%;
+}
 .skill-container .skill-box-60 {
+  background-color: #b76c1d;
   width: 60%;
+}
+.skill-container .skill-box-70 {
+  width: 70%;
 }
 .skill-container .skill-box-80 {
   width: 80%;

@@ -1,4 +1,9 @@
 @import 'mixins';
+
+$skills-green:#194b19;
+$skills-yellow: #b76c1d;
+$skills-red: #a22c23;
+
 .skill-container {
   display:flex;
   margin-bottom: 15px;
@@ -8,21 +13,36 @@
   font-weight: 600;
 
   .skill-box-full {
-    background-color: #226622;
+    background-color: $skills-green;
     border: 1px solid white;
     border-right: none;
     padding-left: 10px;
+    color: #ffffff;
   }
-
+  .skill-box-20 {
+    @extend .skill-box-full;
+    background-color: $skills-red;
+    width: 20%;
+  }
   .skill-box-40 {
     @extend .skill-box-full;
+    background-color: $skills-yellow;
     width: 40%;
   }
-
+  .skill-box-50 {
+    @extend .skill-box-full;
+    background-color: $skills-yellow;
+    width: 50%; 
+  }
   .skill-box-60 {
     @extend .skill-box-full;
+    background-color: $skills-yellow;
     width: 60%; 
   }    
+  .skill-box-70 {
+    @extend .skill-box-full;
+    width: 70%; 
+  }      
   .skill-box-80 {
     @extend .skill-box-full;
     width: 80%;
