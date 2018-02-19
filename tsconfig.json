@@ -1,8 +1,0 @@
-{
-    "compilerOptions": {
-        "target": "es5",
-		"listFiles": true,
-        "sourceMap": true,
-        "allowJs": true
-    }
-}
