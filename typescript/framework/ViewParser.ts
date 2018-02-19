@@ -1,5 +1,0 @@
-namespace MyFramework {
-	class viewParser {
-		
-	}
-}

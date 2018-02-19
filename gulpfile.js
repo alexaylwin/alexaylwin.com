@@ -28,7 +28,7 @@ gulp.task('watch', function() {
     browserSync.init({
         server: "."
     });
-    //livereload.listen();
+    livereload.listen();
     gulp.watch('./sass/*.scss', ['compass']);
     gulp.watch('./typescript/**/*.ts', ['typescript']);
     gulp.watch("*.htm").on('change', browserSync.reload);

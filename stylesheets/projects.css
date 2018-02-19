@@ -6,28 +6,22 @@
   visibility: hidden;
   display: block;
   height: 0;
-  clear: both;
-}
+  clear: both; }
 
 /**Project List **/
 #projectlist li {
   color: #eeeeee;
   font-size: 20px;
-  margin-bottom: 15px;
-}
-#projectlist li .title {
-  display: inline-block;
-  padding-bottom: 5px;
-  font-size: 24px;
-  color: #01A181;
-}
-#projectlist li a {
-  color: #0E9BC7;
-}
-#projectlist li a:hover {
-  color: #BD8F13;
-  cursor: pointer;
-}
-#projectlist li ul li {
-  margin-bottom: 0;
-}
+  margin-bottom: 15px; }
+  #projectlist li .title {
+    display: inline-block;
+    padding-bottom: 5px;
+    font-size: 24px;
+    color: #01A181; }
+  #projectlist li a {
+    color: #0E9BC7; }
+  #projectlist li a:hover {
+    color: #BD8F13;
+    cursor: pointer; }
+  #projectlist li ul li {
+    margin-bottom: 0; }

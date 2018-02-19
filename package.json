@@ -4,7 +4,7 @@
   "description": "",
   "main": "gulp.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "scss": "node-sass --watch sass -o stylesheets"
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +14,7 @@
     "gulp-compass": "^2.1.0",
     "gulp-livereload": "^3.8.1",
     "gulp-typescript": "^2.13.0",
+    "node-sass": "^4.5.3",
     "typescript": "^1.8.10"
   }
 }
