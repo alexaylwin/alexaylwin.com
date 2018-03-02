@@ -10,6 +10,9 @@
   },
   "author": "",
   "license": "ISC",
+  "dependencies": {
+    "bootstrap":"4.0.0"
+  },
   "devDependencies": {
     "browser-sync": "^2.15.0",
     "concurrently": "^3.5.1",
