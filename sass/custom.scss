@@ -1,10 +1,27 @@
-$pastel-white: #f5ecdd;
+@import url('https://fonts.googleapis.com/css?family=Exo:300|Playfair+Display|Yantramanav:300');
+
+$font-exo: 'Exo';
+$font-yant: 'Yantramanav';
+$font-playfair: 'Playfair Display';
+
+$pastel-white: #f5ead8;
+$pastel-beige: #f5ecdd;
 $pastel-red: #A18FA3;
 $pastel-yellow: #EED5AC;
 $pastel-blue: #92A0AF;
 $pastel-green: #C4C898;
 $pastel-gray: #4D586B;
 
+//Bootstrap overrides
 $body-bg: $pastel-white;
+$font-family-sans-serif: $font-exo;
+$headings-font-family: $font-playfair;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1600px
+);
 
 @import "../node_modules/bootstrap/scss/bootstrap";
