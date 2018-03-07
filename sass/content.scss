@@ -1,0 +1,12 @@
+@import 'common.scss';
+
+.image-bordered {
+	border: 2px solid $pastel-gray;
+	margin-bottom: 9px;
+	&:hover {
+		box-shadow: 2px 4px 3px $pastel-gray;
+	}
+}
+ul {
+	list-style:none;
+}

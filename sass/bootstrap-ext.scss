@@ -1,0 +1,15 @@
+@import 'common.scss';
+
+//Bootstrap overrides
+$body-bg: $pastel-white;
+$font-family-sans-serif: $font-exo;
+$headings-font-family: $font-playfair;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1600px
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap";

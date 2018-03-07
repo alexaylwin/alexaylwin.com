@@ -1,9 +1,0 @@
-/* Mixin */
-/** Imports **/
-@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
-.clearfix:after {
-  content: ".";
-  visibility: hidden;
-  display: block;
-  height: 0;
-  clear: both; }

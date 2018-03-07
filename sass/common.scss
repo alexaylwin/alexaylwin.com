@@ -9,19 +9,10 @@ $pastel-beige: #f5ecdd;
 $pastel-red: #A18FA3;
 $pastel-yellow: #EED5AC;
 $pastel-blue: #92A0AF;
-$pastel-green: #C4C898;
+$pastel-green: #c4c898;
 $pastel-gray: #4D586B;
 
-//Bootstrap overrides
-$body-bg: $pastel-white;
-$font-family-sans-serif: $font-exo;
-$headings-font-family: $font-playfair;
-
-$container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1600px
-);
-
-@import "../node_modules/bootstrap/scss/bootstrap";
+.no-padding {
+	padding-left: 0px;
+	padding-right: 0px;
+}

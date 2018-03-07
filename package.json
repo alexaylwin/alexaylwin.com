@@ -5,7 +5,7 @@
   "main": "gulp.js",
   "scripts": {
     "scss": "node-sass --watch sass -o stylesheets",
-    "browser-sync": "browser-sync start --server --index index.html --files \"../alexaylwin.com\"",
+    "browser-sync": "browser-sync start --server --index index.html --files \"../alexaylwin.com/*.html, ../alexaylwin.com/stylesheets/*.css\"",
     "watch": "concurrently --kill-others \"npm run scss\" \"npm run browser-sync\""
   },
   "author": "",
